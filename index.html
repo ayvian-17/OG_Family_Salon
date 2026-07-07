@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Elements - Will be dynamically supplemented by site-config.js -->
+  <title>OG Family Salon | Premium Luxury Salon in Kopar Khairane, Navi Mumbai</title>
+  <meta name="description"
+    content="Experience premium hair, beauty, and grooming services by Nikhil Arora's elite team. Rated 4.9 stars by 494+ clients.">
+  <meta name="keywords"
+    content="Family Salon Kopar Khairane, Best Hair Salon Navi Mumbai, Luxury Salon, Hair Spa, Bridal Makeup, Keratin Treatment, Grooming Salon">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="loading">
+
+  <!-- ==========================================
+       1. INTERACTIVE SCREEN UTILITIES
+       ========================================== -->
+
+  <!-- Custom Cursor Tracker Elements -->
+  <div class="custom-cursor-dot" id="cursor-dot"></div>
+
+  <!-- Fullscreen Loading Shield -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-brand" data-config-key="companyName">OG Family Salon</div>
+    <div class="preloader-progress-bar">
+      <div class="preloader-progress"></div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       2. STICKY NAVBAR (GLASSMORPHISM)
+       ========================================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#home" class="navbar-logo">
+        <img src="og_logo.png" alt="OG Family Salon Logo">
+      </a>
+
+      <!-- Nav anchors -->
+      <div class="navbar-links">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="navbar-actions">
+        <!-- Theme Toggle Switch -->
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle light/dark theme">
+          <!-- Icon will be dynamically updated by script.js -->
+        </button>
+        <!-- Sticky CTA Button -->
+        <a href="#contact" class="btn btn-primary">Book Appointment</a>
+
+        <!-- Mobile menu toggle burger -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle mobile menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       3. HERO SECTION
+       ========================================== -->
+  <section class="hero" id="home" style="background-image: url('og_hero.png');">
+    <div class="hero-content">
+      <span class="hero-tagline" data-config-key="tagline">Premium Family Salon in Kopar Khairane</span>
+      <h1 class="hero-title">The Original Family Salon</h1>
+      <p class="hero-description">Experience premium hair, beauty, and grooming services by founder Nikhil Arora's elite
+        team. We offer a pristine, high-end atmosphere designed to help you look, feel, and project your ultimate
+        confidence.</p>
+
+      <!-- Physical Address -->
+      <p class="hero-address" data-config-key="address">Shop No. 08, Proviso Tower, Plot No. 14, Near Gahlot College,
+        Sector 16, Kopar Khairane, Navi Mumbai, Maharashtra – 400709</p>
+
+      <!-- Trust Indicator Block -->
+      <div class="hero-trust">
+        <span>⭐ 4.9 Rating</span> based on 494+ Verified Google Reviews
+      </div>
+
+      <!-- Action Button Grid -->
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">Book Appointment</a>
+        <a href="https://wa.me/919029091111?text=Hello%20OG%20Family%20Salon,%20I%20want%20to%20book%20an%20appointment."
+          target="_blank" class="btn btn-whatsapp">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-message-circle">
+            <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+          </svg>
+          WhatsApp Booking
+        </a>
+        <a href="tel:+919029091111" class="btn btn-secondary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-phone">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+          </svg>
+          Call Now
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       4. COUNT-UP STATS MODULE
+       ========================================== -->
+  <section class="stats" id="stats">
+    <div class="container">
+      <div class="stats-grid">
+
+        <!-- Metric 1 -->
+        <div class="stat-card">
+          <div class="stat-number" id="stat-reviews" data-target="494">0</div>
+          <div class="stat-title">Happy Clients</div>
+          <p class="stat-desc">Google Verified Reviews</p>
+          <div class="stat-stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+        </div>
+
+        <!-- Metric 2 -->
+        <div class="stat-card">
+          <div class="stat-number" id="stat-rating" data-target="4.9">0</div>
+          <div class="stat-title">Client Rating</div>
+          <p class="stat-desc">Out of 5 Stars Average</p>
+        </div>
+
+        <!-- Metric 3 -->
+        <div class="stat-card">
+          <div class="stat-number" id="stat-days" data-target="7">0</div>
+          <div class="stat-title">Open Weekly</div>
+          <p class="stat-desc">Mon: 11 AM - 10 PM<br>Tue-Sun: 10 AM - 10 PM</p>
+        </div>
+
+        <!-- Metric 4 -->
+        <div class="stat-card">
+          <div class="stat-number" id="stat-guarantee" data-target="100">0</div>
+          <div class="stat-title">Satisfaction</div>
+          <p class="stat-desc">Our Premium Promise</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       5. DESIGN DIRECTORY: MATRIX SERVICE CARDS
+       ========================================== -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-title-wrapper">
+        <span class="section-subtitle">Exquisite Services</span>
+        <h2 class="section-title">The OG Services Menu</h2>
+      </div>
+
+      <!-- Category Filter Tabs (Hydrated by JS) -->
+      <div class="services-tabs" id="services-tabs"></div>
+
+      <!-- Services Grid Panes (Hydrated by JS) -->
+      <div class="services-container" id="services-panes"></div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       6. ABOUT THE BRAND ("THE OG STORY")
+       ========================================== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- Left: Founder Card Placeholder -->
+        <div class="about-founder-card">
+          <div class="about-founder-img-placeholder"></div>
+          <div class="founder-info">
+            <span class="founder-title">Master Stylist & Founder</span>
+            <h3 class="founder-name" data-config-key="founder">Nikhil Arora</h3>
+            <span class="founder-signature">Nikhil Arora</span>
+          </div>
+        </div>
+
+        <!-- Right Content Column -->
+        <div class="about-content">
+          <span class="section-subtitle">The OG Story</span>
+          <h2 class="about-header">Crafting Confidence Since Day One</h2>
+          <p class="about-text">At OG Family Salon, curated by Nikhil Arora and our elite team of stylists, we believe
+            every client deserves exceptional care and a personalized experience. Our skilled team offers professional
+            hair styling, beauty treatments, skincare, and grooming services in a pristine, hygienic, and highly
+            welcoming environment.</p>
+          <p class="about-text">Whether you are visiting for a quick haircut or a complete signature makeover, our goal
+            is to help you look, feel, and project your ultimate confidence. We combine elite-level expertise with
+            state-of-the-art beauty tools to provide Navi Mumbai with a sanctuary of pure rejuvenation.</p>
+
+          <!-- Spacing / trust items -->
+          <div class="about-features">
+            <div class="about-feature-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-shield-check">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                <path d="m9 12 2 2 4-4" />
+              </svg>
+              100% Hygienic Protocols
+            </div>
+            <div class="about-feature-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-sparkles">
+                <path
+                  d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707" />
+                <path
+                  d="m9.06 11.94 1.4-1.4a2 2 0 0 0 0-2.83L9.06 6.31a2 2 0 0 0-2.83 0l-1.4 1.4a2 2 0 0 0 0 2.83l1.4 1.4a2 2 0 0 0 2.83 0Z" />
+                <path
+                  d="m19.06 19.94 1.4-1.4a2 2 0 0 0 0-2.83l-1.4-1.4a2 2 0 0 0-2.83 0l-1.4 1.4a2 2 0 0 0 0 2.83l1.4 1.4a2 2 0 0 0 2.83 0Z" />
+              </svg>
+              Premium Global Products
+            </div>
+            <div class="about-feature-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-award">
+                <circle cx="12" cy="8" r="7" />
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+              </svg>
+              Elite Certified Stylists
+            </div>
+            <div class="about-feature-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-smile">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+                <line x1="9" y1="9" x2="9.01" y2="9" />
+                <line x1="15" y1="9" x2="15.01" y2="9" />
+              </svg>
+              Premium Comfort Amenities
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       7. LUXURY PLACEHOLDER GALLERY
+       ========================================= -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-title-wrapper">
+        <span class="section-subtitle">Visual Experience</span>
+        <h2 class="section-title">Salon Sanctuary Tour</h2>
+      </div>
+
+      <div class="gallery-grid">
+
+        <!-- DEVELOPER NOTE: Upload your custom salon interior and treatment photos here later -->
+
+        <!-- Item 1: Salon Exterior -->
+        <div class="gallery-item">
+          <div class="gallery-image-wrapper">
+            <div class="gallery-img-placeholder" style="background: linear-gradient(135deg, #1e1e1e 0%, #111 100%);">
+            </div>
+          </div>
+          <div class="gallery-overlay">
+            <span class="gallery-category">Luxury Space</span>
+            <h4 class="gallery-title">Salon Exterior</h4>
+          </div>
+        </div>
+
+        <!-- Item 2: Reception Area -->
+        <div class="gallery-item">
+          <div class="gallery-image-wrapper">
+            <div class="gallery-img-placeholder" style="background: linear-gradient(135deg, #252525 0%, #111 100%);">
+            </div>
+          </div>
+          <div class="gallery-overlay">
+            <span class="gallery-category">Welcoming</span>
+            <h4 class="gallery-title">Reception Area</h4>
+          </div>
+        </div>
+
+        <!-- Item 3: Hair Styling Zone -->
+        <div class="gallery-item">
+          <div class="gallery-image-wrapper">
+            <div class="gallery-img-placeholder" style="background: linear-gradient(135deg, #1c1c1c 0%, #111 100%);">
+            </div>
+          </div>
+          <div class="gallery-overlay">
+            <span class="gallery-category">Hair Mastery</span>
+            <h4 class="gallery-title">Hair Styling Zone</h4>
+          </div>
+        </div>
+
+        <!-- Item 4: Treatment Room -->
+        <div class="gallery-item">
+          <div class="gallery-image-wrapper">
+            <div class="gallery-img-placeholder" style="background: linear-gradient(135deg, #222222 0%, #111 100%);">
+            </div>
+          </div>
+          <div class="gallery-overlay">
+            <span class="gallery-category">Skincare & Spa</span>
+            <h4 class="gallery-title">Treatment Room</h4>
+          </div>
+        </div>
+
+        <!-- Item 5: Hair Wash Bay -->
+        <div class="gallery-item">
+          <div class="gallery-image-wrapper">
+            <div class="gallery-img-placeholder" style="background: linear-gradient(135deg, #1f1f1f 0%, #111 100%);">
+            </div>
+          </div>
+          <div class="gallery-overlay">
+            <span class="gallery-category">Rejuvenation</span>
+            <h4 class="gallery-title">Hair Wash Bay</h4>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Image Lightbox Modal Structure -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close" aria-label="Close image popup">&times;</button>
+      <img src="" alt="Popup Large view">
+      <div class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       8. TESTING HYPE MARQUEE (TESTIMONIAL LOOPS)
+       ========================================== -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="section-title-wrapper">
+      <span class="section-subtitle">Elite Endorsements</span>
+      <h2 class="section-title">Client Praise & Reviews</h2>
+    </div>
+
+    <!-- Infinite Auto-Scrolling Reviews Marquee Wrapper -->
+    <div class="marquee-container">
+      <div class="marquee-track" id="marquee-track">
+
+        <!-- Review Block 1 -->
+        <div class="review-card">
+          <div class="review-header">
+            <span class="reviewer-name">Rahul Sharma</span>
+            <span class="review-rating">★★★★★</span>
+          </div>
+          <p class="review-text">"Best hair salon in Navi Mumbai, period. Nikhil Arora is an absolute magician with
+            shears. The premium keratin treatment completely restored my hair's shine."</p>
+        </div>
+
+        <!-- Review Block 2 -->
+        <div class="review-card">
+          <div class="review-header">
+            <span class="reviewer-name">Anjali Patil</span>
+            <span class="review-rating">★★★★★</span>
+          </div>
+          <p class="review-text">"The bridal makeup trial was absolutely flawless! The team is incredibly professional
+            and hygienic. Highly recommend their organic skincare facials."</p>
+        </div>
+
+        <!-- Review Block 3 -->
+        <div class="review-card">
+          <div class="review-header">
+            <span class="reviewer-name">Karan Malhotra</span>
+            <span class="review-rating">★★★★★</span>
+          </div>
+          <p class="review-text">"Top-tier grooming services. The beard styling and hot towel shave is a relaxing
+            therapy session. Proviso Tower salon is beautiful."</p>
+        </div>
+
+        <!-- Review Block 4 -->
+        <div class="review-card">
+          <div class="review-header">
+            <span class="reviewer-name">Priyanka Sen</span>
+            <span class="review-rating">★★★★★</span>
+          </div>
+          <p class="review-text">"Had an amazing hair botox treatment here. Exceptional customer service, very welcoming
+            staff, and pristine clean facilities."</p>
+        </div>
+
+        <!-- Review Block 5 -->
+        <div class="review-card">
+          <div class="review-header">
+            <span class="reviewer-name">Vikram Joshi</span>
+            <span class="review-rating">★★★★★</span>
+          </div>
+          <p class="review-text">"Great kids haircut experience. They were patient, fast, and the styling was stylish.
+            Truly a family salon!"</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Write a Review Interactive Anchor launcher -->
+    <div class="write-review-cta">
+      <p>Have you experienced our elite salon hospitality?</p>
+      <button class="btn btn-secondary" id="btn-write-review">Write a Review</button>
+    </div>
+  </section>
+
+  <!-- Write Review Modal Structure -->
+  <div class="modal" id="review-modal">
+    <div class="modal-card">
+      <button class="modal-close" aria-label="Close modal">&times;</button>
+      <h3 class="modal-title">Write a Review</h3>
+      <p class="modal-desc">Share your premium salon experience with us</p>
+
+      <form id="review-form">
+        <!-- Star selection block -->
+        <div class="rating-select">
+          <span class="star-input active" data-rating="1">★</span>
+          <span class="star-input active" data-rating="2">★</span>
+          <span class="star-input active" data-rating="3">★</span>
+          <span class="star-input active" data-rating="4">★</span>
+          <span class="star-input active" data-rating="5">★</span>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="rev-name">Your Full Name</label>
+          <input type="text" id="rev-name" class="form-input" required placeholder="John Doe">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="rev-text">Your Review Details</label>
+          <textarea id="rev-text" class="form-input" required
+            placeholder="Tell others about your hair, makeup, or grooming services..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary form-submit-btn">Submit Review</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       9. ACCORDION FAQ PACK
+       ========================================== -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-title-wrapper">
+        <span class="section-subtitle">Common Questions</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-wrapper">
+
+        <!-- Accordion Q1 -->
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span>Do I need to book an appointment?</span>
+            <span class="faq-icon-wrapper"></span>
+          </button>
+          <div class="faq-panel">
+            <div class="faq-content">
+              Appointments are highly recommended for a seamless, prompt, and premium experience. However, walk-ins are
+              always welcome based on stylist availability.
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion Q2 -->
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span>Do you offer services for both men and women?</span>
+            <span class="faq-icon-wrapper"></span>
+          </button>
+          <div class="faq-panel">
+            <div class="faq-content">
+              Yes! OG Family Salon is a comprehensive premium family salon. We specialize in high-end hair, beauty,
+              skincare, and grooming services for men, women, and children.
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion Q3 -->
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span>What are your working hours?</span>
+            <span class="faq-icon-wrapper"></span>
+          </button>
+          <div class="faq-panel">
+            <div class="faq-content">
+              We are open 7 days a week: Monday: 11:00 AM – 10:00 PM | Tuesday to Sunday: 10:00 AM – 10:00 PM.
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion Q4 -->
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span>Can I get a consultation before booking a premium treatment?</span>
+            <span class="faq-icon-wrapper"></span>
+          </button>
+          <div class="faq-panel">
+            <div class="faq-content">
+              Yes, absolutely! We offer complimentary styling and skincare consultations. You can visit us or call to schedule a discussion with our experts to understand what suits you best and get an accurate estimate.
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion Q5 -->
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span>What product brands do you use for hair and beauty treatments?</span>
+            <span class="faq-icon-wrapper"></span>
+          </button>
+          <div class="faq-panel">
+            <div class="faq-content">
+              To maintain our luxury standards, we exclusively use premium, internationally certified brands such as L'Oréal Professionnel, Schwarzkopf, and luxury skincare lines that are safe and highly effective.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       10. BOOKING LEAD HUB & FOOTER MAPS
+       ========================================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Left: Coordinates and Maps -->
+        <div class="contact-info">
+          <h2 class="contact-title">Visit The Sanctuary</h2>
+          <p class="contact-desc">Ready to craft your ultimate confidence? Connect with us via social networks, phone,
+            or stop by our premium location in Kopar Khairane.</p>
+
+          <div class="contact-details">
+            <!-- Address detail -->
+            <div class="contact-item">
+              <div class="contact-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-map-pin">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <div>
+                <div class="contact-item-title">Location Address</div>
+                <div class="contact-item-value" data-config-key="address">Shop No. 08, Proviso Tower, Plot No. 14, Near
+                  Gahlot College, Sector 16, Kopar Khairane, Navi Mumbai, Maharashtra – 400709</div>
+              </div>
+            </div>
+
+            <!-- Phone detail -->
+            <div class="contact-item">
+              <div class="contact-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-phone-call">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                  <path d="M14.05 2a9 9 0 0 1 8 7.94M14.05 6A5 5 0 0 1 18 10" />
+                </svg>
+              </div>
+              <div>
+                <div class="contact-item-title">Call Reservation</div>
+                <div class="contact-item-value">
+                  <a href="tel:+919029091111" data-config-key="phone">+91 90290 91111</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Operating schedule detail -->
+            <div class="contact-item">
+              <div class="contact-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-clock">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+              </div>
+              <div>
+                <div class="contact-item-title">Salon Working Hours</div>
+                <div class="contact-item-value">
+                  <span data-config-key="workingHours.mon">Mon: 11 AM - 10 PM</span><br>
+                  <span data-config-key="workingHours.tueSun">Tue-Sun: 10 AM - 10 PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Instagram & Social Links Grid -->
+          <div class="contact-socials">
+            <a href="https://www.instagram.com/og_family_salon" target="_blank" class="social-btn"
+              aria-label="Instagram Page" data-config-href="instagramUrl">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-instagram">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" x2="17.51" y2="6.5" y2="6.5" />
+              </svg>
+            </a>
+            <!-- Replace Facebook URL -->
+            <a href="#" target="_blank" class="social-btn" aria-label="Facebook Page">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-facebook">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg>
+            </a>
+            <!-- Replace YouTube URL -->
+            <a href="#" target="_blank" class="social-btn" aria-label="YouTube Page">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-youtube">
+                <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17z" />
+                <polygon points="10 15 15 12 10 9" />
+              </svg>
+            </a>
+            <!-- Replace LinkedIn URL -->
+            <a href="#" target="_blank" class="social-btn" aria-label="LinkedIn Page">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-linkedin">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect width="4" height="12" x="2" y="9" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+            <!-- Replace X (Twitter) URL -->
+            <a href="#" target="_blank" class="social-btn" aria-label="X (Twitter) Page">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-twitter">
+                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Embedded functional grayscale Google Map centered over OG Family Salon -->
+          <div class="map-wrapper">
+            <iframe class="map-frame"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.2104085449767!2d73.0017253!3d19.0988063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c17c66621915%3A0x4ca11b5cbc0368fe!2sOG%20family%20Salon!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              title="Google Map location of OG Family Salon">
+            </iframe>
+          </div>
+          <!-- Open in Maps Button -->
+          <div class="map-action" style="margin-top: 1.2rem; text-align: center;">
+            <a href="https://maps.app.goo.gl/cgm4LfgbA7KmsfjJ8" target="_blank" class="btn btn-secondary" style="width: 100%; display: inline-flex; align-items: center; justify-content: center; gap: 8px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              Open in Maps
+            </a>
+          </div>ion of OG Family Salon in Proviso Tower">
+            </iframe>
+          </div>
+        </div>
+
+        <!-- Right: Client Booking Lead Capture Form -->
+        <div class="booking-card">
+          <h3 class="form-title">Secure Your Sanctuary Session</h3>
+          <p class="form-subtitle">Fill in the details below and we will contact you immediately to lock in your
+            booking.</p>
+
+          <form id="booking-lead-form">
+            <div class="form-group">
+              <label class="form-label" for="client-name">Your Name</label>
+              <input type="text" id="client-name" class="form-input" required placeholder="John Doe">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="client-phone">Phone Number</label>
+              <input type="tel" id="client-phone" class="form-input" required placeholder="+91 90000 00000">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="client-service">Select Treatment Category</label>
+              <select id="client-service" class="form-input" required>
+                <option value="" disabled selected>Select from Menu</option>
+                <option value="Hair Mastery Service">Hair Mastery & Styling</option>
+                <option value="Luxury Skincare Session">Luxury Skincare & Detan</option>
+                <option value="Signature Makeup Package">Signature Makeover & Bridal</option>
+                <option value="Grooming & Nail Care Session">Grooming & Nail Care Spa</option>
+              </select>
+            </div>
+
+            <!-- Date and time pickers -->
+            <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div>
+                <label class="form-label" for="client-date">Select Date</label>
+                <input type="date" id="client-date" class="form-input" required>
+              </div>
+              <div>
+                <label class="form-label" for="client-time">Select Time</label>
+                <input type="time" id="client-time" class="form-input" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="client-notes">Special Requests / Notes (Optional)</label>
+              <textarea id="client-notes" class="form-input"
+                placeholder="Let our master stylists know about your specific preferences..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit-btn">Request Reservation</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       11. PERSISTENT UTILITY FIXES & COMPACT FOOTER
+       ========================================== -->
+
+  <!-- Left Bottom Floating Sticky WhatsApp Widget -->
+  <div class="floating-widget-bar">
+    <a href="https://wa.me/919029091111?text=Hello%20OG%20Family%20Salon,%20I%20want%20to%20book%20an%20appointment."
+      target="_blank" class="floating-btn floating-whatsapp" aria-label="Book on WhatsApp"
+      data-config-href="whatsappBase">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 24 24">
+        <path
+          d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.59 1.978 14.12 1.05 11.5 1.05c-5.442 0-9.87 4.372-9.874 9.802-.001 1.73.468 3.42 1.36 4.935l-.994 3.63 3.733-.979zm11.522-6.84c-.29-.145-1.71-.846-1.976-.941-.266-.096-.46-.145-.652.146-.19.29-.738.941-.906 1.132-.167.19-.335.213-.625.069-.29-.145-1.22-.45-2.325-1.434-.86-.767-1.44-1.716-1.608-2.006-.168-.29-.018-.447.127-.591.13-.13.29-.338.435-.507.145-.17.193-.29.29-.483.097-.19.048-.362-.024-.507-.072-.145-.652-1.57-.893-2.15-.235-.568-.474-.492-.652-.501-.17-.008-.363-.01-.555-.01-.19 0-.501.071-.763.352-.262.28-1.002.977-1.002 2.385s1.023 2.77 1.168 2.964c.145.19 2.012 3.074 4.876 4.314.681.295 1.213.47 1.626.601.684.218 1.306.187 1.8.113.55-.083 1.71-.698 1.95-1.373.24-.676.24-1.256.168-1.373-.072-.117-.266-.19-.556-.335z" />
+      </svg>
+    </a>
+  </div>
+
+  <!-- Right Bottom Sticky Utility Triggers -->
+  <div class="floating-widget-right">
+    <a href="tel:+919029091111" class="floating-btn floating-call" aria-label="Call salon direct"
+      data-config-href="phoneClean">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="lucide lucide-phone">
+        <path
+          d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+      </svg>
+    </a>
+    <button class="btn-back-to-top" id="back-to-top" aria-label="Scroll back to top">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="lucide lucide-chevron-up">
+        <polyline points="18 15 12 9 6 15" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Redesigned Premium Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Column 1: Brand Info -->
+        <div class="footer-col footer-col-brand">
+          <a href="#home" class="footer-logo-premium">
+            <img src="og_logo.png" alt="OG Family Salon Logo">
+          </a>
+          <p class="footer-brand-desc">
+            A sanctuary of pure rejuvenation and elite-level grooming. We combine master craftsmanship with global premium products to elevate your personal style and confidence.
+          </p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact & Hours -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contact & Hours</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <span class="contact-label">Business Hours:</span>
+              <span class="contact-text">
+                Mon: 11 AM - 10 PM<br>
+                Tue-Sun: 10 AM - 10 PM
+              </span>
+            </li>
+            <li>
+              <span class="contact-label">Phone:</span>
+              <a href="tel:+919029091111" class="contact-link">+91 90290 91111</a>
+            </li>
+            <li>
+              <span class="contact-label">Email:</span>
+              <a href="mailto:info@ogfamilysalon.com" class="contact-link">info@ogfamilysalon.com</a>
+            </li>
+            <li>
+              <span class="contact-label">Location:</span>
+              <span class="contact-text">
+                Shop No. 08, Proviso Tower, Sector 16, Kopar Khairane, Navi Mumbai
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Follow Us -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Follow Us</h4>
+          <div class="footer-social-icons">
+            <a href="https://www.instagram.com/og_family_salon" target="_blank" class="social-btn" aria-label="Instagram Page" data-config-href="instagramUrl">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" x2="17.51" y2="6.5" y2="6.5" /></svg>
+            </a>
+            <!-- Replace Facebook URL -->
+            <a href="#" target="_blank" class="social-btn" aria-label="Facebook Page">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
+            </a>
+            <!-- Replace YouTube URL -->
+            <a href="#" target="_blank" class="social-btn" aria-label="YouTube Page">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17z" /><polygon points="10 15 15 12 10 9" /></svg>
+            </a>
+            <!-- Replace LinkedIn URL -->
+            <a href="#" target="_blank" class="social-btn" aria-label="LinkedIn Page">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect width="4" height="12" x="2" y="9" /><circle cx="4" cy="4" r="2" /></svg>
+            </a>
+            <!-- Replace X (Twitter) URL -->
+            <a href="#" target="_blank" class="social-btn" aria-label="X (Twitter) Page">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" /></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="footer-divider">
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          © 2026 OG Family Salon. All Rights Reserved. Owner: <strong>Nikhil Arora</strong>.
+        </p>
+        <div class="footer-legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Site configuration block followed by interaction script -->
+  <script src="site-config.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
